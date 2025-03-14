@@ -1,0 +1,23 @@
+/* reset.css */
+body,
+ul,
+li,
+a,
+button,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Alexandria", sans-serif;
+  overflow-x: hidden; /* يمنع التمرير الأفقي فقط */
+  overflow-y: auto; /* يسمح بالتمرير العمودي */
+}
+
+/* global.css */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

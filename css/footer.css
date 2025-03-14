@@ -1,0 +1,203 @@
+footer {
+  background-color: #1f1a30;
+  padding: 20px 10px;
+  font-family: "Alexandria", sans-serif;
+  border-top: 2px solid #5e5e5e;
+  border-radius: 15px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.footer-logo {
+  margin-top: 12%;
+  max-width: 300px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #fafbf680;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 أعمدة */
+  gap: 50px;
+}
+
+.column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fafbf6;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin: 5px 0;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: #fafbf680;
+  font-size: 14px;
+}
+
+.column ul li a:hover {
+  color: #d391fd;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #fafbf6;
+  font-size: 14px;
+  padding: 15px 0;
+  background-color: #120f1d; /* نفس لون الفوتر أو لون أغمق */
+  margin-top: 15px;
+}
+
+/* إخفاء الفوتر العادي على شاشات الموبايل */
+@media (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+
+/* تصميم الفوتر */
+.mobile-footer {
+  display: none;
+  padding: 20px;
+  background: #1f1a30;
+  border-top: 2px solid #eee;
+  text-align: center;
+  max-width: 480px;
+  margin: auto;
+}
+
+/* الشعار */
+.footer-logo-mobile {
+  max-width: 250px;
+  margin: 50px auto 0 auto;
+}
+
+.footer-logo-mobile p {
+  font-size: 12px;
+  color: #fafbf680;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.social-icons-mobile {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+/* القائمة المنسدلة */
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  border-bottom: 1px solid #fafbf62f;
+  width: 100%;
+  text-align: left;
+}
+
+/* الأزرار الخاصة بالقائمة */
+.accordion {
+  width: 100%;
+  padding: 14px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fafbf6;
+}
+
+.accordion::after {
+  content: "›";
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.accordion.active::after {
+  transform: rotate(90deg);
+}
+
+/* القائمة الفرعية */
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background: #1f1a30;
+  text-align: left;
+}
+
+.submenu li {
+  padding: 10px 15px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #fafbf6cb;
+  font-size: 13px;
+}
+
+.submenu li a:hover {
+  color: #d391fd;
+}
+
+/* تحسينات للموبايل */
+@media (max-width: 768px) {
+  .mobile-footer {
+    display: block;
+    padding: 15px;
+  }
+
+  .accordion {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .submenu li {
+    padding: 8px 12px;
+  }
+
+  .social-icons-mobile img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* حقوق النشر للفوتر الموبايل */
+  .footer-copyright-mobile {
+    text-align: center;
+    font-size: 12px;
+    color: #fafbf6;
+    margin-top: 35px;
+    padding: 10px;
+    background-color: #120f1d;
+  }
+}

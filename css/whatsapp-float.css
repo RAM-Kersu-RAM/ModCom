@@ -1,0 +1,165 @@
+/* CSS for WhatsApp Widget */
+.whatsapp-widget {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background-color: #fafbf6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  display: none; /* مخفي بشكل افتراضي */
+  z-index: 1000;
+}
+
+.whatsapp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1f1a30;
+  color: #fafbf6;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.whatsapp-header button {
+  background: none;
+  border: none;
+  color: #fafbf6;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.whatsapp-body {
+  padding: 10px;
+}
+
+.messages {
+  height: 200px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-area button {
+  padding: 10px 15px;
+  background-color: #1f1a30;
+  color: #fafbf6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #1f1a30; /* لون الخلفية الافتراضي */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #fafbf65c;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* إضافة انتقال للخلفية */
+}
+
+.whatsapp-float:hover {
+  border: 3px solid #1f1a30;
+  background-color: #fafbf6; /* لون الخلفية يصبح أخضر عند التمرير */
+}
+
+.whatsapp-float i {
+  font-size: 30px;
+  color: #fafbf6; /* لون الأيقونة الافتراضي */
+  transition: color 0.3s ease; /* إضافة انتقال للون الأيقونة */
+}
+
+.whatsapp-float:hover i {
+  color: #1f1a30; /* لون الأيقونة يصبح أسود عند التمرير */
+}
+
+/* ******************** */
+
+/* CSS for Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 100px; /* أسفل زر الواتساب */
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #1f1a30;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #fafbf65c;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0; /* مخفي بشكل افتراضي */
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.scroll-to-top i {
+  font-size: 24px;
+  color: #fafbf6;
+}
+
+.scroll-to-top:hover {
+  border: 3px solid #1f1a30;
+  background-color: #fafbf6;
+}
+
+.scroll-to-top:hover i {
+  color: #000000; /* لون السهم يصبح أسود عند التمرير */
+}
+
+.scroll-to-top.visible {
+  opacity: 1; /* إظهار الزر عند التمرير */
+}
+/* **************** */
+
+@media (max-width: 767px) {
+  .whatsapp-widget {
+    width: 90%; /* جعل العرض يتناسب مع شاشة الموبايل */
+    right: 5%; /* توسيط الويدجت */
+    bottom: 100px; /* تعديل الموضع */
+  }
+
+  .whatsapp-float {
+    width: 50px; /* تصغير حجم الأيقونة */
+    height: 50px;
+    bottom: 20px; /* تعديل الموضع */
+    right: 20px;
+  }
+
+  .whatsapp-float i {
+    font-size: 24px; /* تصغير حجم الأيقونة */
+  }
+
+  .scroll-to-top {
+    width: 40px; /* تصغير حجم الأيقونة */
+    height: 40px;
+    bottom: 80px; /* تعديل الموضع */
+    right: 25px;
+  }
+
+  .scroll-to-top i {
+    font-size: 20px; /* تصغير حجم الأيقونة */
+  }
+}

@@ -1,0 +1,174 @@
+/* value-proposition.css */
+.value-proposition {
+  padding: 60px 20px;
+  background-color: #ededed;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.value-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-proposition h2 {
+  font-size: 2.5rem;
+  color: #1f1a30;
+  margin-bottom: 40px;
+}
+
+.value-grid {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.video-showcase {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container {
+  display: flex;
+  gap: 15px;
+}
+
+.video-item {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: flex 0.3s ease, box-shadow 0.3s ease;
+  min-width: 100px;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+.value-points {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.value-point {
+  flex: 1;
+  background-color: #fafbf6;
+  padding: 20px;
+  border: 1px solid #1f1a30;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-point:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.value-point i {
+  font-size: 2rem;
+  color: #1f1a30;
+  margin-bottom: 15px;
+}
+
+.value-point h3 {
+  font-size: 1.5rem;
+  color: #1f1a30;
+  margin-bottom: 10px;
+}
+
+.value-point p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* تنسيقات شاشة الموبايل */
+@media (max-width: 768px) {
+  .value-proposition {
+    padding: 40px 15px; /* تقليل الحشو */
+  }
+
+  .value-proposition h2 {
+    font-size: 2rem; /* تصغير حجم العنوان */
+    margin-bottom: 20px; /* تقليل الهامش السفلي */
+  }
+
+  .value-grid {
+    flex-direction: column; /* تكديس العناصر عموديًا */
+    gap: 20px; /* تقليل المسافة بين العناصر */
+  }
+
+  .text-content {
+    text-align: center; /* توسيط النص */
+  }
+
+  .text-content p {
+    font-size: 1rem; /* تصغير حجم النص */
+  }
+
+  .video-showcase {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .video-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .video-item {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: flex 0.3s ease, box-shadow 0.3s ease;
+    min-width: 100px;
+  }
+
+  .video-item iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .value-points {
+    flex-direction: column; /* تكديس المربعات الفرعية عموديًا */
+    gap: 15px; /* تقليل المسافة بين المربعات */
+  }
+
+  .value-point {
+    padding: 15px; /* تقليل الحشو داخل المربعات */
+  }
+
+  .value-point h3 {
+    font-size: 1.3rem; /* تصغير حجم العنوان داخل المربعات */
+  }
+
+  .value-point p {
+    font-size: 0.9rem; /* تصغير حجم النص داخل المربعات */
+  }
+}

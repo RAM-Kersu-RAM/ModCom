@@ -1,0 +1,135 @@
+/* hero.css */
+.hero {
+  padding: 50px 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1f1a30;
+  background-color: #ededed;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* تعديل الاتجاه عند الترجمة إلى العربية */
+.hero-content[dir="rtl"] {
+  flex-direction: row-reverse;
+}
+
+.hero-text {
+  width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* تعديل اتجاه النص عند الترجمة إلى العربية */
+.hero-text[dir="rtl"] {
+  text-align: right;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-actions .see-work {
+  background-color: #1f1a30;
+  color: #fafbf6;
+}
+
+.hero-actions .see-work:hover {
+  border: 1px solid #1f1a30;
+  background-color: #fafbf6;
+  color: #1f1a30;
+}
+
+.hero-video {
+  width: 600px;
+}
+
+.hero-video iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+/* تنسيقات شاشة الموبايل (عامة) */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column; /* تكديس العناصر عموديًا */
+    text-align: center; /* توسيط النص */
+    align-items: center; /* توسيط جميع العناصر */
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-actions {
+    margin: 15px 0; /* إضافة مسافة حول الزر */
+    display: flex;
+    justify-content: center; /* توسيط الزر أفقيًا */
+  }
+
+  .hero-actions button {
+    display: block;
+    margin: 0 auto; /* توسيط الزر داخل الحاوية */
+  }
+
+  .hero-video {
+    width: 100%;
+  }
+
+  .hero-video iframe {
+    height: 250px;
+  }
+}
+
+/* تنسيقات خاصة باللغة العربية */
+body[dir="rtl"] .hero-content {
+  flex-direction: column; /* التأكد من أن العناصر تتراكم عموديًا */
+  text-align: center; /* توسيط النص */
+}
+
+body[dir="rtl"] .hero-text {
+  width: 100%; /* التأكد من أن النص يأخذ العرض الكامل */
+}
+
+body[dir="rtl"] .hero-actions {
+  margin: 15px 0; /* إضافة مسافة حول الزر */
+  display: flex;
+  justify-content: center; /* توسيط الزر أفقيًا */
+}
+
+body[dir="rtl"] .hero-actions button {
+  display: block;
+  margin: 0 auto; /* توسيط الزر داخل الحاوية */
+}
+
+body[dir="rtl"] .hero-video {
+  width: 100%; /* التأكد من أن الفيديو يأخذ العرض الكامل */
+}
+
+body[dir="rtl"] .hero-video iframe {
+  height: 250px; /* تحديد ارتفاع الفيديو */
+}

@@ -1,0 +1,153 @@
+/* تنسيق القسم العام */
+.services-section {
+  position: relative;
+  width: 100%;
+  max-width: 1360px;
+  margin: 50px auto; /* توسيط أفقي مع مسافة علوية وسفلية */
+  overflow: hidden;
+  background-color: #ededed;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* إخفاء شريط التمرير */
+.service-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* تنسيق كل مستطيل خدمة */
+.service-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 500px; /* ارتفاع ثابت للمستطيلات */
+  width: 300px; /* عرض أقل من الارتفاع */
+  flex-shrink: 0; /* منع التقلص */
+  transition: transform 0.3s ease; /* إضافة تأثير التحويل للمستطيل */
+}
+
+.service-item:hover {
+  transform: scale(1.05); /* تكبير المستطيل عند التمرير */
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-image {
+  transform: scale(1.1); /* تكبير الصورة داخل المستطيل */
+}
+
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* طبقة معتمة */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fafbf6;
+  padding: 20px;
+}
+
+.service-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-subtitle {
+  font-size: 16px;
+}
+
+/* تنسيق أزرار التنقل */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1f1a307b;
+  color: #fafbf6;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #1f1a30;
+}
+
+/* ******************** */
+
+@media (max-width: 768px) {
+  /* تنسيق القسم العام لشاشات الموبايل */
+  .services-section {
+    margin: 20px auto; /* تقليل المسافة العلوية والسفلية */
+    padding: 10px; /* تقليل الحشو الداخلي */
+    border-radius: 8px; /* تقليل زوايا التدوير */
+  }
+
+  /* تنسيق حاوية الخدمات لشاشات الموبايل */
+  .service-container {
+    gap: 10px; /* تقليل المسافة بين العناصر */
+    padding: 5px; /* تقليل الحشو الداخلي */
+  }
+
+  /* تنسيق كل مستطيل خدمة لشاشات الموبايل */
+  .service-item {
+    height: 300px; /* تقليل الارتفاع */
+    width: 200px; /* تقليل العرض */
+  }
+
+  /* تنسيق نص الخدمة لشاشات الموبايل */
+  .service-title {
+    font-size: 18px; /* تقليل حجم الخط */
+    margin-bottom: 5px; /* تقليل المسافة السفلية */
+  }
+
+  .service-subtitle {
+    font-size: 14px; /* تقليل حجم الخط */
+  }
+
+  /* تنسيق أزرار التنقل لشاشات الموبايل */
+  .prev-button,
+  .next-button {
+    padding: 8px; /* تقليل الحشو الداخلي */
+    font-size: 16px; /* تقليل حجم الخط */
+  }
+
+  .prev-button {
+    left: 10px; /* تقليل المسافة من اليسار */
+  }
+
+  .next-button {
+    right: 15px; /* تقليل المسافة من اليمين */
+  }
+}

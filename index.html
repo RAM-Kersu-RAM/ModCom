@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModCom</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/make-everything-possible.css">
+  <link rel="stylesheet" href="css/expert-team.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/social-media.css">
+  <link rel="stylesheet" href="css/value-proposition.css">
+  <link rel="stylesheet" href="css/whatsapp-float.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/custom-style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/image/logo.svg" alt="Logo">
+      </div>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#" data-translate="services">Services</a></li>
+          <li><a href="#" data-translate="pricing">Pricing</a></li>
+          <li><a href="#" data-translate="ourWork">Our work</a></li>
+          <li><a href="#" data-translate="whyModCom">Why ModCom?</a></li>
+          <li><a href="#" data-translate="ourMission">Our mission</a></li>
+          <li><a href="#" data-translate="reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button class="language" id="toggleLanguage">EN</button>
+        <button class="login" data-translate="logIn">Log in</button>
+      </div>
+      <div class="hamburger">&#9776;</div>
+      <nav class="mobile-nav" id="mobileNav">
+        <div class="close-btn">&times;</div>
+        <ul>
+          <li><a href="#" data-translate="services">Services</a></li>
+          <li><a href="#" data-translate="pricing">Pricing</a></li>
+          <li><a href="#" data-translate="ourWork">Our work</a></li>
+          <li><a href="#" data-translate="whyModCom">Why ModCom?</a></li>
+          <li><a href="#" data-translate="ourMission">Our mission</a></li>
+          <li><a href="#" data-translate="reviews">Reviews</a></li>
+          <!-- إضافة أيقونات التواصل الاجتماعي هنا -->
+          <li class="social-icons-mobile">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="tel:+1234567890" class="social-icon call-us">
+              <i class="fas fa-phone"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- New Section -->
+    <section class="hero">
+      <div class="hero-content" id="heroContent">
+        <div class="hero-text">
+          <h1 data-translate="heroTitle">Hiring a creative team doesn't have to be costly</h1>
+          <p data-translate="heroText">Agencies and fast-growing brands trust ModCom's top 2% talents to deliver
+            on-brand creatives powering their growth.</p>
+          <div class="hero-actions">
+            <button class="see-work" data-translate="seeWork">See our work</button>
+          </div>
+        </div>
+        <div class="hero-video">
+          <iframe loading="lazy" width="560" height="315"
+            src="https://www.youtube.com/embed/z4_oqTZJqCo?si=aMlzhDO2Mn8uWtwl&autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Section: Slideshow -->
+    <section class="slideshow">
+      <div class="slides-container">
+        <div class="slides">
+          <div class="slide">
+            <img src="https://cyberpanel.net/wp-content/uploads/2024/11/How-Linux-Works.jpg" alt="How Linux Works"
+              class="post-image"
+              onclick="openPopup('https://cyberpanel.net/wp-content/uploads/2024/11/How-Linux-Works.jpg')">
+          </div>
+          <div class="slide">
+            <img
+              src="https://zentyal.com/nitropack_static/lsOiSYxEMDeRiowyGITbqUhvVeJZuwVO/assets/images/optimized/rev-7d4f046/www.zentyal.com/wp-content/uploads/2024/02/Linux-operating-system.png"
+              alt="Linux OS" class="post-image"
+              onclick="openPopup('https://zentyal.com/nitropack_static/lsOiSYxEMDeRiowyGITbqUhvVeJZuwVO/assets/images/optimized/rev-7d4f046/www.zentyal.com/wp-content/uploads/2024/02/Linux-operating-system.png')">
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.blackhatethicalhacking.com/wp-content/uploads/2024/11/10-Things-to-Do-After-Installing-Kali-Linux.png"
+              alt="Linux Lander" class="post-image"
+              onclick="openPopup('https://www.blackhatethicalhacking.com/wp-content/uploads/2024/11/10-Things-to-Do-After-Installing-Kali-Linux.png')">
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.ceos3c.com/wp-content/uploads/2021/10/Install-VSCode-on-Kali-Linux.jpg?ezimgfmt=rs%3Adevice%2Frscb56-1"
+              alt="Linux Server" class="post-image"
+              onclick="openPopup('https://www.ceos3c.com/wp-content/uploads/2021/10/Install-VSCode-on-Kali-Linux.jpg?ezimgfmt=rs%3Adevice%2Frscb56-1')">
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.csoonline.com/wp-content/uploads/2023/06/kali_linux_tools_abstract_gears_binary_data_by_nevarpp_gettyimages-688718788_2400x1600-100832674-orig.jpg?resize=1536%2C1024&quality=50&strip=all"
+              alt="Linux Server" class="post-image"
+              onclick="openPopup('https://www.csoonline.com/wp-content/uploads/2023/06/kali_linux_tools_abstract_gears_binary_data_by_nevarpp_gettyimages-688718788_2400x1600-100832674-orig.jpg?resize=1536%2C1024&quality=50&strip=all')">
+          </div>
+          <div class="slide">
+            <img src="https://m.media-amazon.com/images/I/81NrE65lZRL._SL1500_.jpg" alt="Linux Server"
+              class="post-image" onclick="openPopup('https://m.media-amazon.com/images/I/81NrE65lZRL._SL1500_.jpg')">
+          </div>
+        </div>
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img id="popupImage" src="" alt="Popup Image">
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i> <!-- أيقونة Facebook -->
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i> <!-- أيقونة Twitter -->
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i> <!-- أيقونة LinkedIn -->
+      </a>
+    </div>
+
+    <!-- New Section: Value Proposition -->
+    <section class="value-proposition">
+      <div class="value-content">
+        <h2 data-translate="valueTitle">4000+ companies choose ModCom over in-house</h2>
+        <div class="value-grid">
+          <!-- النص -->
+          <div class="text-content">
+            <p data-translate="valueText">ModCom offers top-tier creative services with a dedicated team and inclusive
+              subscription plans.</p>
+          </div>
+
+          <!-- الفيديوهات -->
+          <div class="video-showcase">
+            <div class="video-container">
+              <div class="video-item">
+                <iframe loading="lazy" width="560" height="315"
+                  src="https://www.youtube.com/embed/4JVaRloezno?si=OKrksCQ4mLE8BPzq" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-item">
+                <iframe loading="lazy" width="560" height="315"
+                  src="https://www.youtube.com/embed/PD6-iyZeSTw?si=uA4WIWu923Z8Z9L-" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-item">
+                <iframe loading="lazy" width="560" height="315"
+                  src="https://www.youtube.com/embed/9ao4FEaDGhQ?si=AOMs_m-gGuMyarJS" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- العناوين الثلاثة -->
+        <div class="value-points">
+          <div class="value-point">
+            <i class="fas fa-star"></i> <!-- أيقونة -->
+            <h3 data-translate="topTalents">Top 2% of talents</h3>
+            <p data-translate="topTalentsText">Have the same caliber talents from major brands such as Nike and Lyft
+              also work on your or your client’s projects.</p>
+          </div>
+          <div class="value-point">
+            <i class="fas fa-users"></i> <!-- أيقونة -->
+            <h3 data-translate="dedicatedTeam">Dedicated team</h3>
+            <p data-translate="dedicatedTeamText">Matched with a dedicated team of creatives to guarantee your projects
+              are always delivered on-brand and on-time.</p>
+          </div>
+          <div class="value-point">
+            <i class="fas fa-layer-group"></i> <!-- أيقونة -->
+            <h3 data-translate="inclusiveSubscription">Inclusive subscription</h3>
+            <p data-translate="inclusiveSubscriptionText">No hourly billing, credits, or complex pricing. Our inclusive
+              plans have everything you need to grow and scale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Section: Our Expert Team -->
+    <section class="expert-team">
+      <div class="expert-content">
+        <h2 data-translate="expertTeamTitle">We Have a Specialized Team in Design, Editing, and All Types of Programming
+        </h2>
+
+        <!-- Typing Effect -->
+        <div class="typing-effect">
+          <p>We use: <span id="typing"></span></p>
+        </div>
+
+        <!-- Expert Stats -->
+        <div class="expert-stats">
+          <div class="stat-item">
+            <h3>10,000+</h3>
+            <p data-translate="projectsDelivered">Projects Successfully Delivered</p>
+          </div>
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p data-translate="specializedServices">Types of Specialized Services</p>
+          </div>
+          <div class="stat-item">
+            <h3>95%</h3>
+            <p data-translate="customerSatisfaction">Customer Satisfaction Rate</p>
+          </div>
+        </div>
+
+        <!-- Expert Points -->
+        <div class="expert-points">
+          <div class="point-item">
+            <i class="fas fa-palette"></i> <!-- Design Icon -->
+            <h3 data-translate="professionalDesign">Professional Design</h3>
+            <p data-translate="professionalDesignText">A creative design team that provides innovative visual solutions
+              to meet your needs.</p>
+          </div>
+          <div class="point-item">
+            <i class="fas fa-video"></i> <!-- Editing Icon -->
+            <h3 data-translate="expertEditing">Expert Editing</h3>
+            <p data-translate="expertEditingText">A professional editing team that produces high-quality videos.</p>
+          </div>
+          <div class="point-item">
+            <i class="fas fa-code"></i> <!-- Programming Icon -->
+            <h3 data-translate="comprehensiveProgramming">Comprehensive Programming</h3>
+            <p data-translate="comprehensiveProgrammingText">A specialized programming team that covers all types of
+              applications and systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Section: Make Everything Possible -->
+    <section class="make-everything-possible">
+      <div class="make-everything-content">
+        <h2 data-translate="makeEverythingTitle">Make Everything Possible</h2>
+        <!-- صورة الأشخاص -->
+        <div class="team-image">
+          <img
+            src="https://media.istockphoto.com/id/2166408604/photo/group-adult-asia-male-female-freelance-typing-write-prompt-ai-bot-it-app-smart-program-nomad.jpg?s=1024x1024&w=is&k=20&c=ftcSz7HGcQzvuk6RPRfyL00FXb6W0wBuqFrhWE4FlyU="
+            alt="Team Image">
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-paint-brush"></i> <!-- أيقونة تصميم -->
+          <h3 data-translate="designerForAnyProject">Designer for Any Project</h3>
+          <p data-translate="designerForAnyProjectText">Whatever your design needs, there’s always a ModCom designer for
+            the task, including programming-related designs.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-rocket"></i> <!-- أيقونة سرعة -->
+          <h3 data-translate="fastTurnaround">Fast Turnaround</h3>
+          <p data-translate="fastTurnaroundText">Super-fast turnaround to meet your most demanding deadlines, even for
+            complex programming projects.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i> <!-- أيقونة جودة -->
+          <h3 data-translate="qualityControlled">Quality Controlled</h3>
+          <p data-translate="qualityControlledText">QC team checks every submission to minimize back-and-forth and
+            improve the final output.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="service-container">
+        <div class="service-item">
+          <img src="https://picsum.photos/200/300?random=1" alt="Service 1" class="service-image">
+          <div class="service-overlay">
+            <h2 class="service-title" data-translate="customBranding">Custom Branding</h2>
+            <p class="service-subtitle" data-translate="customBrandingDesc">Develop your brand with our expert team.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="https://picsum.photos/200/300?random=2" alt="Service 2" class="service-image">
+          <div class="service-overlay">
+            <h2 class="service-title" data-translate="webDesign">Web Design</h2>
+            <p class="service-subtitle" data-translate="webDesignDesc">Create a unique and user-friendly website.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="https://picsum.photos/200/300?random=3" alt="Service 3" class="service-image">
+          <div class="service-overlay">
+            <h2 class="service-title" data-translate="illustrations">Illustrations</h2>
+            <p class="service-subtitle" data-translate="illustrationsDesc">High-quality visuals by top illustrators.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="https://picsum.photos/200/300?random=4" alt="Service 4" class="service-image">
+          <div class="service-overlay">
+            <h2 class="service-title" data-translate="digitalAds">Digital Ads</h2>
+            <p class="service-subtitle" data-translate="digitalAdsDesc">Tailored digital ad designs for your brand.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="https://picsum.photos/200/300?random=5" alt="Service 5" class="service-image">
+          <div class="service-overlay">
+            <h2 class="service-title" data-translate="printAds">Print Ads</h2>
+            <p class="service-subtitle" data-translate="printAdsDesc">Professional print ad designs.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="https://picsum.photos/200/300?random=6" alt="Service 6" class="service-image">
+          <div class="service-overlay">
+            <h2 class="service-title" data-translate="seoOptimization">SEO Optimization</h2>
+            <p class="service-subtitle" data-translate="seoOptimizationDesc">Boost your website's visibility.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="https://picsum.photos/200/300?random=5" alt="Service 5" class="service-image">
+          <div class="service-overlay">
+            <h2 class="service-title" data-translate="printAds">Print Ads</h2>
+            <p class="service-subtitle" data-translate="printAdsDesc">Professional print ad designs.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="https://picsum.photos/200/300?random=5" alt="Service 5" class="service-image">
+          <div class="service-overlay">
+            <h2 class="service-title" data-translate="printAds">Print Ads</h2>
+            <p class="service-subtitle" data-translate="printAdsDesc">Professional print ad designs.</p>
+          </div>
+        </div>
+      </div>
+      <button class="nav-button prev-button" onclick="prevSlide()">&#10094;</button>
+      <button class="nav-button next-button" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <!-- زر الرجوع إلى الأعلى -->
+    <div class="scroll-to-top" id="scrollToTop">
+      <i class="fas fa-arrow-up"></i> <!-- أيقونة السهم للأعلى -->
+    </div>
+
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-widget" id="whatsappWidget">
+      <div class="whatsapp-header">
+        <span data-translate="chatWithModcom">Chat with ModCom</span>
+        <button onclick="toggleWhatsAppWidget()">×</button>
+      </div>
+      <div class="whatsapp-body">
+        <div class="messages" id="messages">
+          <!-- الرسائل ستظهر هنا -->
+        </div>
+        <div class="input-area">
+          <input type="text" id="chatInput" placeholder="Type a message..." data-translate="typeMessagePlaceholder" />
+          <button onclick="sendMessage()" data-translate="sendButton">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float" onclick="toggleWhatsAppWidget()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/typingEffect.js"></script>
+    <script src="js/languageToggle.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/videoHover.js"></script>
+    <script src="js/whatsappWidget.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/gif-handler.js"></script>
+
+    <script>
+      document.querySelector('.hamburger').addEventListener('click', function () {
+        document.querySelector('.mobile-nav').classList.add('active');
+      });
+
+      document.querySelector('.close-btn').addEventListener('click', function () {
+        document.querySelector('.mobile-nav').classList.remove('active');
+      });
+
+      document.addEventListener('click', function (event) {
+        const mobileNav = document.querySelector('.mobile-nav');
+        const hamburger = document.querySelector('.hamburger');
+        if (!mobileNav.contains(event.target) && !hamburger.contains(event.target)) {
+          mobileNav.classList.remove('active');
+        }
+      });
+    </script>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/image/logo1.svg" alt="Logo">
+          <p data-translate="designed_with_love">Designed with ❤️</p>
+          <div class="social-icons">
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="column">
+            <h3 data-translate="company">Company</h3>
+            <ul>
+              <li><a href="#" data-translate="about_us">About Us?</a></li>
+              <li><a href="#" data-translate="our_mission">Our Mission</a></li>
+              <li><a href="#" data-translate="how_it_works">How it Works</a></li>
+              <li><a href="#" data-translate="our_team">Our Team</a></li>
+              <li><a href="#" data-translate="careers">Careers</a></li>
+              <li><a href="#" data-translate="contact_us">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3 data-translate="services">Services</h3>
+            <ul>
+              <li><a href="#" data-translate="graphic_design">Graphic Design</a></li>
+              <li><a href="#" data-translate="illustrations">Illustrations</a></li>
+              <li><a href="#" data-translate="advertisements">Advertisements</a></li>
+              <li><a href="#" data-translate="motion_graphics">Motion Graphics</a></li>
+              <li><a href="#" data-translate="web_design">Web Design</a></li>
+              <li><a href="#" data-translate="presentations">Presentations</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3 data-translate="reviews">Reviews</h3>
+            <ul>
+              <li><a href="#" data-translate="customer_feedback">Customer Feedback</a></li>
+              <li><a href="#" data-translate="testimonials">Testimonials</a></li>
+              <li><a href="#" data-translate="case_studies">Case Studies</a></li>
+              <li><a href="#" data-translate="success_stories">Success Stories</a></li>
+              <li><a href="#" data-translate="ratings">Ratings</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3 data-translate="education">Education</h3>
+            <ul>
+              <li><a href="#" data-translate="tutorials">Tutorials</a></li>
+              <li><a href="#" data-translate="webinars">Webinars</a></li>
+              <li><a href="#" data-translate="courses">Courses</a></li>
+              <li><a href="#" data-translate="certifications">Certifications</a></li>
+              <li><a href="#" data-translate="ebooks">E-books</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3 data-translate="help">Help</h3>
+            <ul>
+              <li><a href="#" data-translate="faqs">FAQs</a></li>
+              <li><a href="#" data-translate="support_center">Support Center</a></li>
+              <li><a href="#" data-translate="live_chat">Live Chat</a></li>
+              <li><a href="#" data-translate="terms_conditions">Terms & Conditions</a></li>
+              <li><a href="#" data-translate="privacy_policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p data-translate="copyright">© 2025 All Rights Reserved To ModCom</p>
+      </div>
+    </footer>
+
+    <footer class="mobile-footer">
+      <div class="footer-logo-mobile">
+        <img src="/image/logo1.svg" alt="Logo">
+        <p data-translate="designed_with_love">Designed with ❤️</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" target="_blank" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+
+      <ul class="footer-menu-mobile">
+        <li class="menu-item">
+          <button class="accordion" data-translate="company">Company</button>
+          <ul class="submenu">
+            <li><a href="#" data-translate="about_us">About Us?</a></li>
+            <li><a href="#" data-translate="our_mission">Our Mission</a></li>
+            <li><a href="#" data-translate="how_it_works">How it Works</a></li>
+            <li><a href="#" data-translate="our_team">Our Team</a></li>
+            <li><a href="#" data-translate="careers">Careers</a></li>
+            <li><a href="#" data-translate="contact_us">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <button class="accordion" data-translate="services">Services</button>
+          <ul class="submenu">
+            <li><a href="#" data-translate="graphic_design">Graphic Design</a></li>
+            <li><a href="#" data-translate="illustrations">Illustrations</a></li>
+            <li><a href="#" data-translate="advertisements">Advertisements</a></li>
+            <li><a href="#" data-translate="motion_graphics">Motion Graphics</a></li>
+            <li><a href="#" data-translate="web_design">Web Design</a></li>
+            <li><a href="#" data-translate="presentations">Presentations</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <button class="accordion" data-translate="reviews">Reviews</button>
+          <ul class="submenu">
+            <li><a href="#" data-translate="customer_feedback">Customer Feedback</a></li>
+            <li><a href="#" data-translate="testimonials">Testimonials</a></li>
+            <li><a href="#" data-translate="case_studies">Case Studies</a></li>
+            <li><a href="#" data-translate="success_stories">Success Stories</a></li>
+            <li><a href="#" data-translate="ratings">Ratings</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <button class="accordion" data-translate="education">Education</button>
+          <ul class="submenu">
+            <li><a href="#" data-translate="tutorials">Tutorials</a></li>
+            <li><a href="#" data-translate="webinars">Webinars</a></li>
+            <li><a href="#" data-translate="courses">Courses</a></li>
+            <li><a href="#" data-translate="certifications">Certifications</a></li>
+            <li><a href="#" data-translate="ebooks">E-books</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <button class="accordion" data-translate="faqs">FAQs</button>
+          <ul class="submenu">
+            <li><a href="#" data-translate="faqs">FAQs</a></li>
+            <li><a href="#" data-translate="support_center">Support Center</a></li>
+            <li><a href="#" data-translate="live_chat">Live Chat</a></li>
+            <li><a href="#" data-translate="terms_conditions">Terms & Conditions</a></li>
+            <li><a href="#" data-translate="privacy_policy">Privacy Policy</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footer-copyright-mobile">
+        <p data-translate="copyright">© 2025 All Rights Reserved To ModCom</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

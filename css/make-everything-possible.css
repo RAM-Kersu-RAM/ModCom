@@ -1,0 +1,106 @@
+/* CSS for Make Everything Possible Section */
+.make-everything-possible {
+  padding: 60px 20px;
+  background-color: #ededed;
+  text-align: center;
+}
+
+.make-everything-content h2 {
+  font-size: 2.5rem;
+  color: #1f1a30;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  flex: 1;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border: 1px solid #1f1a30;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #1f1a30;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #1f1a30;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* CSS for Team Image */
+.team-image {
+  margin: 40px;
+  text-align: center;
+}
+
+.team-image img {
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ************************* */
+
+/* تنسيقات شاشة الموبايل */
+@media (max-width: 768px) {
+  .make-everything-possible {
+    padding: 40px 15px; /* تقليل الحشو */
+  }
+
+  .make-everything-content h2 {
+    font-size: 2rem; /* تصغير حجم العنوان */
+    margin-bottom: 20px; /* تقليل الهامش السفلي */
+  }
+
+  .features {
+    flex-direction: column; /* تكديس العناصر عموديًا */
+    gap: 15px; /* تقليل المسافة بين العناصر */
+  }
+
+  .feature {
+    padding: 15px; /* تقليل الحشو داخل العناصر */
+  }
+
+  .feature i {
+    font-size: 1.5rem; /* تصغير حجم الأيقونة */
+  }
+
+  .feature h3 {
+    font-size: 1.3rem; /* تصغير حجم العنوان */
+  }
+
+  .feature p {
+    font-size: 0.9rem; /* تصغير حجم النص */
+  }
+
+  .team-image {
+    margin: 20px 0; /* تقليل الهامش */
+  }
+
+  .team-image img {
+    border-radius: 15px; /* تصغير زوايا الصورة */
+  }
+}

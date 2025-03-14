@@ -1,0 +1,162 @@
+/* Expert Team Section */
+.expert-team {
+  padding: 80px 40px;
+  background-color: #1f1a30; /* Purple background */
+  color: #fafbf6;
+  text-align: center;
+  border-radius: 15px;
+  width: 85%;
+  margin: 50px; /* توسيط القسم أفقيًا */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  font-family: "Alexandria", sans-serif; /* Font */
+}
+
+.expert-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.expert-team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600; /* Bold font */
+}
+
+/* Typing Effect */
+.typing-effect {
+  margin-bottom: 40px;
+}
+
+.typing-effect p {
+  font-size: 1.5rem;
+  font-weight: 500; /* Medium font */
+}
+
+#typing {
+  font-weight: bold;
+  color: #d391fd; /* Yellow color */
+}
+
+/* Expert Stats */
+.expert-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-item {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px #fafbf642;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600; /* Bold font */
+}
+
+.stat-item p {
+  font-size: 1rem;
+  font-weight: 400; /* Normal font */
+}
+
+/* Expert Points */
+.expert-points {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.point-item {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  box-shadow: 0 4px 6px #fafbf642;
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.point-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.point-item i {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #d391fd; /* Yellow color */
+}
+
+.point-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600; /* Bold font */
+}
+
+.point-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400; /* Normal font */
+}
+
+/* تنسيقات شاشة الموبايل */
+@media (max-width: 768px) {
+  .expert-team {
+    padding: 40px 20px; /* تقليل الحشو */
+    width: 90%; /* زيادة العرض لملء الشاشة */
+    margin: 30px auto; /* تقليل الهامش */
+  }
+
+  .expert-team h2 {
+    font-size: 2rem; /* تصغير حجم العنوان */
+    margin-bottom: 20px; /* تقليل الهامش السفلي */
+  }
+
+  .typing-effect p {
+    font-size: 1.2rem; /* تصغير حجم النص */
+  }
+
+  .expert-stats {
+    flex-direction: column; /* تكديس العناصر عموديًا */
+    gap: 15px; /* تقليل المسافة بين العناصر */
+  }
+
+  .stat-item {
+    padding: 15px; /* تقليل الحشو داخل العناصر */
+  }
+
+  .stat-item h3 {
+    font-size: 1.5rem; /* تصغير حجم العنوان */
+  }
+
+  .stat-item p {
+    font-size: 0.9rem; /* تصغير حجم النص */
+  }
+
+  .expert-points {
+    flex-direction: column; /* تكديس العناصر عموديًا */
+    gap: 15px; /* تقليل المسافة بين العناصر */
+  }
+
+  .point-item {
+    padding: 15px; /* تقليل الحشو داخل العناصر */
+  }
+
+  .point-item h3 {
+    font-size: 1.3rem; /* تصغير حجم العنوان */
+  }
+
+  .point-item p {
+    font-size: 0.9rem; /* تصغير حجم النص */
+  }
+}

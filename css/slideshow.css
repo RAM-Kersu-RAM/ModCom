@@ -1,0 +1,93 @@
+/* slideshow.css */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 1360px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #ededed;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slides-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 calc(100% / 3);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.post-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.post-image:hover {
+  transform: scale(1.05);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1f1a307b;
+  color: #fafbf6;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #1f1a30;
+}
+
+@media (max-width: 768px) {
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    flex: 0 0 50%; /* عرض شريحتين في كل مرة */
+    padding: 5px;
+  }
+
+  .post-image {
+    width: 100%;
+    height: 250px; /* تقليل الارتفاع قليلاً ليناسب الموبايل */
+    object-fit: cover;
+  }
+
+  .prev,
+  .next {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
